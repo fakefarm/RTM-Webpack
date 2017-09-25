@@ -1,5 +1,5 @@
 {
-  "name": "RTFM-webpack",
+  "name": "RTM-Webpack",
   "version": "1.0.0",
   "description": "Reading the manual",
   "main": "index.js",
@@ -10,6 +10,8 @@
   "author": "Dave Woodall",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2",
     "webpack": "^3.6.0"
   },
   "dependencies": {

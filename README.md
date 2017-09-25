@@ -23,3 +23,20 @@ Webpack uses `webpack.config.js`. If a `webpack.config.js` is present, the webpa
 #### --config flag
 
 Use the `--config` option to pass a config of any name. This will come in useful for more complex configurations that need to be split into multiple files.
+
+## [Asset Management](https://webpack.js.org/guides/asset-management/)
+
+### Introduce modules and loaders
+
+```
+module: {
+  rules: [{
+    test: /\.css$/,
+    use: [
+      'style-loader',
+      'css-loader'
+    ]
+  }]
+```
+
+Loaders are how content is modified. `test` searches for extensions. `use` is a collection of loaders
