@@ -1,0 +1,18 @@
+{
+  "name": "RTFM-webpack",
+  "version": "1.0.0",
+  "description": "Reading the manual",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Dave Woodall",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
