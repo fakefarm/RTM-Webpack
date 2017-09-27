@@ -68,3 +68,20 @@ The real trick is to have a problem to solve and stop and think about what loade
 #### Loading Images and Fonts
 
 The `file-loader` is a multi-purpose loader that instructs webpack to emit the required object as file and to return its public url.
+
+## Entry & Output
+
+`entry` is the property which manages the files created for consumption by linking the key, or file name with the source location to be ingested.
+
+`output` has a `filename` property which will resolve each key in `entry` and populate the `[name]` variable with each `entry` key. In this example, output will put a `app.bundle.js` and `print.bundle.js` into the `/dist` directory as stated in `path`
+
+```
+entry: {
+  app: './src/index.js',
+  print: './src/print.js'
+},
+output: {
+  filename: '[name].bundle.js',
+  path: path.resolve(__dirname, 'dist')
+}
+```
