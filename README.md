@@ -85,3 +85,12 @@ output: {
   path: path.resolve(__dirname, 'dist')
 }
 ```
+
+## Introducing Plugins
+
+But what would happen if we changed the name of one of our entry points, or even added a new one? The generated bundles would be renamed on a build, but our index.html file would still reference the old names.
+This is a situation where a plugin comes in. (Instead of a loader.) Plugins can be thought of as build tasks on the larger system, rather than specific files.
+
+### Dynamic Index files with `HtmlWebpackPlugin`
+
+By default, `HtmlWebpackPlugin` will generate its own `index.html` file in the dist/ folder.
